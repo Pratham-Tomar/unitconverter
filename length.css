@@ -1,0 +1,101 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: #BFD641;
+}
+
+div {
+  max-width: 500px;
+  margin: 0 auto;
+  background-color: #EDF1FF;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+p {
+  margin-bottom: 10px;
+}
+
+input[type="number"] {
+  width: 100%;
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+input[type="number"]{
+  outline: none;
+  border-color: #555;
+}
+#heading{
+  background-color: RGB(136, 176, 75);
+}
+@keyframes boxAnimation {
+  0% {
+    transform: perspective(500px) rotateY(0deg) rotateX(0deg);
+  }
+  50% {
+    transform: perspective(500px) rotateY(360deg) rotateX(-180deg);
+  }
+  100% {
+    transform: perspective(500px) rotateY(360deg) rotateX(0deg);
+  }
+}
+
+div {
+  animation: boxAnimation 3s ;
+}
+@keyframes glowing {
+  0% {
+    color: #fff;
+    text-shadow: none;
+  }
+  50% {
+    color: black;
+    text-shadow: 0 0 8px green;
+  }
+  100% {
+    color: #fff;
+    text-shadow: none;
+  }
+}
+
+h1,h2{
+  animation: glowing 5s ease-in-out infinite;
+  
+}
+@keyframes backgroundAnimation {
+  0% {
+    background-color: #006400; 
+  }
+  25% {
+    background-color: #00693E; 
+  }
+  50% {
+    background-color: #4CBB17; 
+    }
+  75% {
+    background-color: #8cc751; 
+    }
+  100% {
+    background-color: #90EE90; 
+  }
+}
+
+body {
+  animation: backgroundAnimation 15s infinite;
+}
